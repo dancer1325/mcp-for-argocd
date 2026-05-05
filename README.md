@@ -37,7 +37,12 @@ const urlForGithub = `https://insiders.vscode.dev/redirect?url=${encodeURICompon
 
 ## Features
 
-- **Transport Protocols**: Supports both stdio and HTTP stream transport modes for flexible integration with different clients
+- **Transport Protocols**
+  - supported modes
+    - stdio
+    - HTTP stream 
+  - enable
+    - flexible integration -- with -- DIFFERENT clients
 - **Complete Argo CD API Integration**: Provides comprehensive access to Argo CD resources and operations
 - **AI Assistant Ready**: Pre-configured tools for AI assistants to interact with Argo CD in natural language
 
