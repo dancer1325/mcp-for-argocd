@@ -199,24 +199,11 @@ In stateless mode:
 
 This mode is recommended for Kubernetes deployments with Horizontal Pod Autoscaling (HPA) where network-level sticky sessions are not available.
 
-## For Development
+## how to develop?
 
-1. Clone the repository:
-```bash
-git clone https://github.com/argoproj-labs/mcp-for-argocd.git
-cd mcp-for-argocd
-```
-
-2. Install project dependencies:
-```bash
-pnpm install
-```
-
-3. Start the development server with hot reloading enabled:
-```bash
-pnpm run dev
-```
-Once the server is running, you can utilize the MCP server within Visual Studio Code or other MCP client.
+- `pnpm install`
+- `pnpm run dev`
+- use your MCP server
 
 ### Upgrading ArgoCD Types
 
