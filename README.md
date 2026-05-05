@@ -72,10 +72,12 @@ const urlForGithub = `https://insiders.vscode.dev/redirect?url=${encodeURICompon
 
 ### Prerequisites
 
-- Node.js (v18 or higher recommended)
-- pnpm package manager (for development)
-- Argo CD instance with API access
-- Argo CD API token (see the [docs for instructions](https://argo-cd.readthedocs.io/en/stable/developer-guide/api-docs/#authorization)) 
+- Node.js v18+
+- pnpm package manage 
+  - uses
+    - development
+- Argo CD instance / enable API access
+- [Argo CD API token](https://argo-cd.readthedocs.io/en/stable/developer-guide/api-docs/#authorization)
 
 ### Usage with Cursor
 1. Follow the [Cursor documentation for MCP support](https://docs.cursor.com/context/model-context-protocol), and create a `.cursor/mcp.json` file in your project:
