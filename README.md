@@ -43,8 +43,9 @@ const urlForGithub = `https://insiders.vscode.dev/redirect?url=${encodeURICompon
     - HTTP stream 
   - enable
     - flexible integration -- with -- DIFFERENT clients
-- **Complete Argo CD API Integration**: Provides comprehensive access to Argo CD resources and operations
-- **AI Assistant Ready**: Pre-configured tools for AI assistants to interact with Argo CD in natural language
+- **Complete Argo CD API Integration**
+- **AI Assistant Ready**
+  - == Pre-configured AI assistant's tools -- , to interact, vía natural language, -- with Argo CD
 
 ## Available Tools
 
