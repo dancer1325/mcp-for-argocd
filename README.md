@@ -82,7 +82,8 @@ const urlForGithub = `https://insiders.vscode.dev/redirect?url=${encodeURICompon
 - [Argo CD API token](https://argo-cd.readthedocs.io/en/stable/developer-guide/api-docs/#authorization)
 
 ### Usage with Cursor
-1. Follow the [Cursor documentation for MCP support](https://docs.cursor.com/context/model-context-protocol), and create a `.cursor/mcp.json` file in your project:
+1. [Cursor documentation for MCP support](https://docs.cursor.com/context/model-context-protocol)
+2. create ".cursor/mcp.json"
 ```json
 {
   "mcpServers": {
@@ -101,11 +102,12 @@ const urlForGithub = `https://insiders.vscode.dev/redirect?url=${encodeURICompon
 }
 ```
 
-2. Start a conversation with Agent mode to use the MCP.
+3. Start a conversation with Agent mode
 
 ### Usage with VSCode
 
-1. Follow the [Use MCP servers in VS Code documentation](https://code.visualstudio.com/docs/copilot/chat/mcp-servers), and create a `.vscode/mcp.json` file in your project:
+1. [how to use MCP servers | VS Code documentation](https://code.visualstudio.com/docs/copilot/chat/mcp-servers)
+2. create ".vscode/mcp.json"
 ```json
 {
   "servers": {
@@ -125,11 +127,12 @@ const urlForGithub = `https://insiders.vscode.dev/redirect?url=${encodeURICompon
 }
 ```
 
-2. Start a conversation with an AI assistant in VS Code that supports MCP.
+3. start a conversation / AI assistant | VS Code
 
 ### Usage with Claude Desktop
 
-1. Follow the [MCP in Claude Desktop documentation](https://modelcontextprotocol.io/quickstart/user), and create a `claude_desktop_config.json` configuration file:
+1. [MCP | Claude Desktop](https://modelcontextprotocol.io/quickstart/user)
+2. create a "claude_desktop_config.json"
 ```json
 {
   "mcpServers": {
@@ -148,7 +151,7 @@ const urlForGithub = `https://insiders.vscode.dev/redirect?url=${encodeURICompon
 }
 ```
 
-2. Configure Claude Desktop to use this configuration file in settings.
+3. Configure Claude Desktop / use this configuration file | settings
 
 ### Self-signed Certificates
 
