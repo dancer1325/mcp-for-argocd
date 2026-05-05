@@ -49,6 +49,8 @@ const urlForGithub = `https://insiders.vscode.dev/redirect?url=${encodeURICompon
 
 ## Available Tools
 
+- by default, ALL are AVAILABLE
+
 ### Cluster Management
 - `list_clusters`: List all clusters registered with ArgoCD
 
@@ -163,18 +165,15 @@ This disables TLS certificate validation for Node.js when connecting to Argo CD 
 
 ### Read Only Mode
 
-If you want to run the MCP Server in a ReadOnly mode to avoid resource or application modification, you should set the environment variable:
-```
-"MCP_READ_ONLY": "true"
-```
-This will disable the following tools:
-- `create_application`
-- `update_application`
-- `delete_application`
-- `sync_application`
-- `run_resource_action`
+- steps to configure It
+  - set the "MCP_READ_ONLY": "true" environment variable
 
-By default, all the tools will be available.
+- disable
+  - `create_application`
+  - `update_application`
+  - `delete_application`
+  - `sync_application`
+  - `run_resource_action`
 
 ### Stateless Mode
 
