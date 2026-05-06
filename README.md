@@ -195,12 +195,23 @@ docker run -e ARGOCD_BASE_URL=<argocd_url> -e ARGOCD_API_TOKEN=<argocd_token> \
   argoprojlabs/mcp-for-argocd http --stateless
 ```
 
-In stateless mode:
-- No `Mcp-Session-Id` is returned or required — any replica can handle any request
-- ArgoCD credentials must be supplied on every request via environment variables or `x-argocd-base-url` / `x-argocd-api-token` headers
-- `GET /mcp` and `DELETE /mcp` return `405 Method Not Allowed` (session-level SSE and termination are not supported)
+- NO return NOR require `Mcp-Session-Id`
+  - -> replica can handle ANY request
+- requirements
+  - supply ArgoCD credentials / EACH request
+    - ways to provide
+      - -- via -- environment variables, OR
+      - `x-argocd-base-url` / `x-argocd-api-token` headers
+- `GET /mcp` & `DELETE /mcp`
+  - 's return: `405 Method Not Allowed`
+    - Reason: 🧠 NOT support
+      - session-level SSE 
+      - termination 🧠
 
-- use Kubernetes deployments with Horizontal Pod Autoscaling (HPA) where network-level sticky sessions are not available.
+- use cases
+  - Kubernetes deployments / 
+    - have Horizontal Pod Autoscaling (HPA)  
+    - network-level sticky sessions are NOT AVAILABLE 
 
 ## how to develop?
 
