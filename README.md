@@ -200,7 +200,7 @@ In stateless mode:
 - ArgoCD credentials must be supplied on every request via environment variables or `x-argocd-base-url` / `x-argocd-api-token` headers
 - `GET /mcp` and `DELETE /mcp` return `405 Method Not Allowed` (session-level SSE and termination are not supported)
 
-This mode is recommended for Kubernetes deployments with Horizontal Pod Autoscaling (HPA) where network-level sticky sessions are not available.
+- use Kubernetes deployments with Horizontal Pod Autoscaling (HPA) where network-level sticky sessions are not available.
 
 ## how to develop?
 
