@@ -182,13 +182,14 @@ This disables TLS certificate validation for Node.js when connecting to Argo CD 
 
 By default, the HTTP transport assigns a session ID to each client connection and keeps an in-memory map of active sessions. This works well for single-instance deployments but causes `400` errors when multiple replicas are running without sticky sessions, because a request routed to a different pod will not find the session that was created on the original pod.
 
-To run without session affinity requirements, start the server with the `--stateless` flag:
+- if you want to run WITHOUT session affinity requirements -> start the server with the `--stateless` flag
+  - | node
 
 ```bash
 node dist/index.js http --stateless
 ```
 
-Or with Docker:
+  - | Docker
 
 ```bash
 docker run -e ARGOCD_BASE_URL=<argocd_url> -e ARGOCD_API_TOKEN=<argocd_token> \
