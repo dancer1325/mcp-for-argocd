@@ -1,38 +1,17 @@
 # Argo CD MCP Server
 
-- [MCP](https://modelcontextprotocol.io) server implementation -- for -- [Argo CD](https://argo-cd.readthedocs.io/en/stable/)
-  - allow
-    - AI assistants can interact -- ,through through natural language,with -- your Argo CD applications 
-  - provide
-    - seamless integration -- with --
-      - Visual Studio Code
-      - other MCP clients -- through --
-        - stdio
-        - HTTP stream
-
-<a href="https://glama.ai/mcp/servers/@akuity/argocd-mcp">
-  <img width="380" height="200" src="https://glama.ai/mcp/servers/@akuity/argocd-mcp/badge" alt="argocd-mcp MCP server" />
-</a>
-
-<!--
-// Generate using?:
-const config = JSON.stringify({
-  "name": "argocd-mcp",
-  "command": "npx",
-  "args": ["argocd-mcp@latest", "stdio"],
-  "env": {
-    "ARGOCD_BASE_URL": "<argocd_url>",
-    "ARGOCD_API_TOKEN": "<argocd_token>"
-  }
-});
-const urlForWebsites = `vscode:mcp/install?${encodeURIComponent(config)}`;
-// Github markdown does not allow linking to `vscode:` directly, so you can use our redirect:
-const urlForGithub = `https://insiders.vscode.dev/redirect?url=${encodeURIComponent(urlForWebsites)}`;
--->
+* == [MCP](https://modelcontextprotocol.io) server implementation -- for -- [Argo CD](https://argo-cd.readthedocs.io/en/stable/)
+  * allow
+    * AI assistants can interact -- ,through natural language,with -- your Argo CD applications 
+  * provide
+    * seamless integration -- with --
+      * Visual Studio Code
+      * other MCP clients -- through --
+        * stdio
+        * HTTP stream
 
 [<img src="https://img.shields.io/badge/VS_Code-VS_Code?style=flat-square&label=Install%20Server&color=0098FF" alt="Install in VS Code">](https://insiders.vscode.dev/redirect?url=vscode%3Amcp%2Finstall%3F%257B%2522name%2522%253A%2522argocd-mcp%2522%252C%2522command%2522%253A%2522npx%2522%252C%2522args%2522%253A%255B%2522argocd-mcp%2540latest%2522%252C%2522stdio%2522%255D%252C%2522env%2522%253A%257B%2522ARGOCD_BASE_URL%2522%253A%2522%253Cargocd_url%253E%2522%252C%2522ARGOCD_API_TOKEN%2522%253A%2522%253Cargocd_token%253E%2522%257D%257D)  [<img alt="Install in VS Code Insiders" src="https://img.shields.io/badge/VS_Code_Insiders-VS_Code_Insiders?style=flat-square&label=Install%20Server&color=24bfa5">](https://insiders.vscode.dev/redirect?url=vscode-insiders%3Amcp%2Finstall%3F%257B%2522name%2522%253A%2522argocd-mcp%2522%252C%2522command%2522%253A%2522npx%2522%252C%2522args%2522%253A%255B%2522argocd-mcp%2540latest%2522%252C%2522stdio%2522%255D%252C%2522env%2522%253A%257B%2522ARGOCD_BASE_URL%2522%253A%2522%253Cargocd_url%253E%2522%252C%2522ARGOCD_API_TOKEN%2522%253A%2522%253Cargocd_token%253E%2522%257D%257D)
 
----
 ![argocd-mcp-demo](https://github.com/user-attachments/assets/091548d0-9927-4d4b-a2fe-4f99c7cea108)
 
 ## Features
@@ -49,7 +28,8 @@ const urlForGithub = `https://insiders.vscode.dev/redirect?url=${encodeURICompon
 
 ## Available Tools
 
-- by default, ALL are AVAILABLE
+* by default, 
+  * ALL are AVAILABLE
 
 ### Cluster Management
 - `list_clusters`: List all clusters registered with ArgoCD
